@@ -53,3 +53,9 @@ textarea {
     width: 90vw; /* VIEWPORT WIDTH */
     max-width: 700px;
 }
+
+@media (min-width: 700px){
+    :root{
+        font-size: 62.5%; /* Todo rem será relativo a 10px. O font-size padrão é de 16px, logo 62.5% = 10px */
+    }
+}
