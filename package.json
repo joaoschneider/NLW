@@ -1,0 +1,27 @@
+{
+  "name": "NLW",
+  "version": "1.0.0",
+  "description": "🚀 Nesse repositório estão os arquivos criados para desenvolvimento do website Proffy. O desenvolvimento desse website faz parte da Next Level Week #02, promovida pela RocketSeat.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mr-schneider1/NLW.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mr-schneider1/NLW/issues"
+  },
+  "homepage": "https://github.com/mr-schneider1/NLW#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
