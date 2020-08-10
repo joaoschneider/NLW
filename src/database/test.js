@@ -13,7 +13,7 @@ db.then(async (database) => {
     }
 
     classValue = {
-        subject: "Química", 
+        subject: 1, 
         cost: "40", 
         //o proffy_id vem pelo banco apos cadastro do proffy
     }
@@ -36,5 +36,16 @@ db.then(async (database) => {
     // await createProffy(database, {proffyValue, classValue, classScheduleValues})
 
     const selectedProffys = await database.all("SELECT * FROM PROFFYS")
-    console.log(selectedProffys)
+    // console.log(selectedProffys)
+
+    const selectSchedules = await database.all(`
+        SELECT class_schedule.*
+        FROM class_schedule
+        WHERE class_schedule.class_id = 1
+        AND class_schedule.weekday = 1
+        AND class_schedule.time_from <= 750
+        AND class_schedule.time_to > 750
+    `)
+
+    console.log(selectSchedules)
 })
